@@ -91,7 +91,7 @@ tidy = combined[ , c("SUBJECT_ID", "ACTIVITY_LABEL", "SET_INDICATOR", stdAndMean
 write.csv(tidy, "../tidy.csv")
 
 # Step 5:
-# Finally, we need to take the average of every variable for each activity and subject. This requires 
+# Finally, we need to take the average of every variable for each activity and subject. This requires the melt function from the reshape2 package, and the ddply function from the plyr package.
 
 # Get the ID column names and the fact column names in separate char vectors
 idCols = matchcols(tidy, with=c("SUBJECT_ID", "ACTIVITY_LABEL"), method="or")
