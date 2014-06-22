@@ -1,4 +1,4 @@
-# Code Book for tidy.csv
+# Code Book for tidy.csv and tidyAvg.csv
 
 ## Experimental Study Design
 Original data source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -39,7 +39,7 @@ These signals were used to estimate variables of the feature vector for each pat
 
 
 
-## Code Book
+## Code Book for tidy.csv
 * __time___ indicates time domain variables
 * __frequency___ indicates frequency domain variables
 
@@ -131,3 +131,10 @@ These signals were used to estimate variables of the feature vector for each pat
 80. frequency_BodyBodyGyroMag_meanFreq - numeric - units are radians/second -- ex: -0.45345956
 81. frequency_BodyBodyGyroJerkMag_mean - numeric - units are radians/second -- ex: -0.45345956
 82. frequency_BodyBodyGyroJerkMag_meanFreq - numeric - units are radians/second -- ex: -0.45345956
+
+
+## Code Book for tidyAvg.csv
+1. SUBJECT_ID - integer - identifies the subject who performed the activity for each sample. Range: 1 to 30
+2. ACTIVITY_LABEL - character/factor - Describes what the activity was. Values (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING)
+3. mean - numeric - the average of all the non-id columns for each subject and activity from tidy.csv
+
