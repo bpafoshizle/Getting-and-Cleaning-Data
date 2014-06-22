@@ -1,0 +1,5 @@
+setwd("~/github/local")
+dir.create("Getting and Cleaning Data Course Project/data/raw")
+setwd("Getting and Cleaning Data Course Project/data/raw")
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="FUCI HAR Dataset.zip", method="curl")
+unzip("FUCI HAR Dataset.zip")
