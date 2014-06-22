@@ -20,7 +20,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 ## Summary Choices
-This code was not summarized, only merged and combined with other data to produce a tidy data set.
+tidy.csv was not summarized, only merged and combined with other data to produce a tidy data set.
+tidyAvg.csv is summarized to the grain of subject, activity, with the mean taken for every 
 
 From the raw data's file features.info:
 
@@ -136,5 +137,6 @@ These signals were used to estimate variables of the feature vector for each pat
 ## Code Book for tidyAvg.csv
 1. SUBJECT_ID - integer - identifies the subject who performed the activity for each sample. Range: 1 to 30
 2. ACTIVITY_LABEL - character/factor - Describes what the activity was. Values (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING)
-3. mean - numeric - the average of all the non-id columns for each subject and activity from tidy.csv
+3. variable - character/factor - the column from the original tidy.csv data set for which the mean has been taken across all observations. -- ex: ("time_BodyGyro_std_X", "frequency_BodyAccJerk_std_X", "time_GravityAcc_mean_Y", ...) 
+4. mean - numeric - the average of all the non-id columns for each subject and activity from tidy.csv. ex: -0.98234533
 
