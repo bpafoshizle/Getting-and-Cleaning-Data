@@ -21,7 +21,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ## Summary Choices
 tidy.csv was not summarized, only merged and combined with other data to produce a tidy data set.
-tidyAvg.csv is summarized to the grain of subject, activity, with the mean taken for every 
+tidyAvg.csv is summarized to the grain of subject, activity, variable with the mean taken for every observation from tidy.csv.
 
 From the raw data's file features.info:
 
