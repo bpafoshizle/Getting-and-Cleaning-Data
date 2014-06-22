@@ -40,14 +40,14 @@ These signals were used to estimate variables of the feature vector for each pat
 
 
 ## Code Book
-*__time___ indicates time domain variables
-*__frequency___ indicates frequency domain variables
+* __time___ indicates time domain variables
+* __frequency___ indicates frequency domain variables
 
-*__mean__ indicates Mean value
-*__std__ indicates Standard deviation
-*__meanFreq__ indicates Weighted average of the frequency components to obtain a mean frequency
+* __mean__ indicates Mean value
+* __std__ indicates Standard deviation
+* __meanFreq__ indicates Weighted average of the frequency components to obtain a mean frequency
 
-*__Jerk__ Indicates the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+* __Jerk__ Indicates the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
 
 1. SUBJECT_ID - integer - identifies the subject who performed the activity for each sample. Range: 1 to 30
 2. ACTIVITY_LABEL - character/factor - Describes what the activity was. Values (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING)
