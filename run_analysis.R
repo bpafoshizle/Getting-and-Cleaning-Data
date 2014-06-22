@@ -101,7 +101,9 @@ factCols = matchcols(tidy, without=c("SUBJECT_ID", "ACTIVITY_LABEL", "SET_INDICA
 tidyMelt = melt(tidy, id=idCols, measure.vars=factCols)
 
 # use ddply from the plyr package to summarize the data by activity label and subject id.
-tidyAvg = ddply(tidyMelt, .(SUBJECT_ID, ACTIVITY_LABEL), summarize, mean=mean(value))
+tidyAvg = ddply(tidyMelt, .(SUBJECT_ID, ACTIVITY_LABEL, variable), summarize, mean=mean(value))
 
 write.csv(tidyAvg, "../tidyAvg.csv")
+
+
 
